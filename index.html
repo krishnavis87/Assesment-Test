@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MandlacX Surveillance Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">MANDLACX</div>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Cameras</a>
+        <a href="#">Scenes</a>
+        <a href="#">Incidents</a>
+        <a href="#">Users</a>
+      </nav>
+      <div class="user">
+        <span>Mohammed Ajhas</span>
+        <small>ajhas@mandlac.com</small>
+      </div>
+    </header>
+
+    <main>
+      <section class="video-section">
+        <div class="video-header">
+          <span>📅 11/7/2025 - 🕒 03:12:37</span>
+        </div>
+        <div class="video-container">
+          <!-- ✅ EMBEDDED YOUTUBE VIDEO INSTEAD OF LOCAL VIDEO -->
+          <iframe width="100%" height="315" 
+            src="https://www.youtube.com/embed/w6uX9jamcwQ?si=hsb_uOeQgxGLXFUo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="camera-thumbnails">
+          <img src="cam1.jpg" alt="Camera 1" />
+          <img src="cam2.jpg" alt="Camera 2" />
+        </div>
+      </section>
+
+      <aside class="incident-panel">
+        <h3>🚨 15 Unresolved Incidents</h3>
+        <ul class="incident-list">
+          <li>
+            <span class="tag red">Unauthorized Access</span>
+            <p>Shop Floor Camera A<br/>14:35 - 14:37 on 7-Jul-2025</p>
+            <button>Resolve</button>
+          </li>
+          <li>
+            <span class="tag red">Gun Threat</span>
+            <p>Shop Floor Camera A<br/>14:35 - 14:37 on 7-Jul-2025</p>
+            <button>Resolve</button>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="timeline">
+      <h4>Camera List Timeline</h4>
+      <div class="timeline-track">
+        <div class="event cam1" style="left: 10%;">Unauthorized Access</div>
+        <div class="event cam2" style="left: 25%;">Face Recognized</div>
+        <div class="event cam3" style="left: 50%;">Traffic Congestion</div>
+        <div class="event cam3" style="left: 70%;">Unauthorized Access</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
